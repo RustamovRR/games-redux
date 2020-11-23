@@ -1,0 +1,83 @@
+.container {
+    width: 400px;
+    margin: 5% auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form div {
+    display: flex;
+    margin-top: 25px;
+    flex-direction: column;
+}
+
+form div input {
+    background-color: green;
+    border: none;
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: rgb(233, 233, 233);
+    box-shadow: 5px 5px 10px #ccc;
+}
+
+form div input:focus {
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px #ccc;
+}
+
+form a {
+    margin: 20px 0;
+    color: #007bff;
+    text-align: right;
+    text-decoration: none;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form button {
+    height: 45px;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: .3s;
+    text-transform: uppercase;
+    background-color: #007bff;
+    box-shadow: 5px 5px 10px #ccc;
+}
+
+form button:hover {
+    background-color: #3f9bfd;
+    box-shadow: 5px 5px 20px #ccc;
+}
+
+.password_div {
+    position: relative;
+}
+
+#show {
+    top: 35%;
+    right: 1%;
+    position: absolute;
+    cursor: pointer;
+    color: #007bff;
+    font-size: 12px;
+    padding: 17px 15px;
+    text-transform: uppercase;
+}
+
+@media (max-width:500px) {
+    .container {
+        width: 80%;
+    }
+}
