@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import Provider from './GlobalState';
 import './index.css';
-import UserProvider from './UserContext';
+import reducer, { initialState } from './reducer';
 
 
 ReactDOM.render(
-  <UserProvider>
+  <Provider initialState={initialState} reducer={reducer}>
     <App />
-  </UserProvider>
+  </Provider>
   , document.getElementById('root')
 )
