@@ -21,9 +21,11 @@ const userSchema = new mongoose.Schema({
     cart: {
         type: Array,
         default: []
+    },
+    createdAt: {
+        type: Date,
+        default: new Date()
     }
-}, {
-    timestamps: true
 })
 
 module.exports = mongoose.model('User', userSchema)
